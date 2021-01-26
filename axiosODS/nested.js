@@ -28,7 +28,7 @@ const res = axios(config)
     var config = {
       method: "get",
       url:
-        "https://ods-int.myacxiom.com/api/v1/sources?client=demoenv-dllnj&secret=60a46614-7b9b-4db0-865a-f314c16dllnj&rawID=123456789&spc=SPC&recordTypes=test",
+        "https://{{HOST}}/api/v1/sources?client={{mongo_client}}&secret={{mongo_secret}}&email=HELEN.DOE@synth.com&recordTypes=test",
       headers: {
         Authorization: "Bearer " + accessToken,
         "X-Request-Id": "12345-1234-12345-1234-123456",
